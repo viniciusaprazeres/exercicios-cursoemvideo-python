@@ -1,9 +1,10 @@
+import datetime
+
 ano_nascimento = int(input('Digite o ano de nascimento do atleta: '))
-ano_atual = 2017
+ano_atual = datetime.datetime.now().year
 idade = ano_atual - ano_nascimento
 
 print(f'O atleta tem {idade} anos de idade.')
-
 
 if idade <= 9:
     print('Classificação: MIRIM.')
